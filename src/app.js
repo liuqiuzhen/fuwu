@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
+import Ceshi from './ceshi';
+
 import './index.less';
 
-export default class App extends Component {
+// @connect(
+//     state=>state,
+//     gunAdd
+// )
+class App extends Component {
     render() {
+        // console.log(this.props)
         return (
             <div className={'red'}>
+                <Ceshi/>
                 <p>Hello React!</p>
                 <p>Hello React!</p>
                 <p>Hello React!</p>
@@ -16,3 +24,4 @@ export default class App extends Component {
     );
     }
 }
+export default App;
